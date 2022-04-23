@@ -3,6 +3,6 @@
 {% block body %}
   <h3 class='jumbotron'>Welcome : {{session.username}}</h3>
   <section>
-    <div><iframe src = "{% url 'map.html' %}" frameborder="0"></iframe></div>
+    <div><iframe style="border:0; width: 100%; height: 350px;" src ="{{ url_for('static', filename='../static/map.html') }}" frameborder="0" allowfullscreen></iframe></div>
   </section>
-{% endblock %}  
+{% endblock %}    
